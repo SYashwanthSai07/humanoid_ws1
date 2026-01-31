@@ -1,0 +1,24 @@
+<launch>
+
+  <!-- Safely extend Gazebo model path -->
+  <env name="GAZEBO_MODEL_PATH"
+       value="/home/niat/competition_ws/src/gazebo_world/models:$(optenv GAZEBO_MODEL_PATH)" />
+
+  <!-- Start Gazebo -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+    <arg name="headless" value="false"/>
+    <arg name="debug" value="false"/>
+  </include>
+
+  <!-- Spawn white ground -->
+  <node name="spawn_white_ground"
+        pkg="gazebo_ros"
+        type="spawn_model"
+        output="screen"
+        args="-sdf -model white_ground -file /home/niat/competition_ws/src/gazebo_world/models/white_ground/model.sdf" />
+
+</launch>
+

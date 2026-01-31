@@ -1,0 +1,8 @@
+prefix=/home/niat/humanoid_ws/devel
+
+Name: ainex_calibration
+Description: Description of ainex_calibration
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

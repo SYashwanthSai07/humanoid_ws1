@@ -1,0 +1,8 @@
+prefix=/home/niat/humanoid_ws/devel
+
+Name: ainex_sdk
+Description: Description of ainex_sdk
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: rospy std_msgs

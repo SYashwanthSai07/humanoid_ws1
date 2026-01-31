@@ -1,0 +1,11 @@
+# generated from genmsg/cmake/pkg-genmsg.context.in
+
+messages_str = "/home/niat/humanoid_ws/src/ainex_driver/ros_robot_controller/msg/Sbus.msg;/home/niat/humanoid_ws/src/ainex_driver/ros_robot_controller/msg/ButtonState.msg;/home/niat/humanoid_ws/src/ainex_driver/ros_robot_controller/msg/LedState.msg;/home/niat/humanoid_ws/src/ainex_driver/ros_robot_controller/msg/RGBState.msg;/home/niat/humanoid_ws/src/ainex_driver/ros_robot_controller/msg/RGBsState.msg;/home/niat/humanoid_ws/src/ainex_driver/ros_robot_controller/msg/BuzzerState.msg;/home/niat/humanoid_ws/src/ainex_driver/ros_robot_controller/msg/MotorState.msg;/home/niat/humanoid_ws/src/ainex_driver/ros_robot_controller/msg/OLEDState.msg;/home/niat/humanoid_ws/src/ainex_driver/ros_robot_controller/msg/MotorsState.msg;/home/niat/humanoid_ws/src/ainex_driver/ros_robot_controller/msg/BusServoState.msg;/home/niat/humanoid_ws/src/ainex_driver/ros_robot_controller/msg/GetBusServoCmd.msg;/home/niat/humanoid_ws/src/ainex_driver/ros_robot_controller/msg/SetBusServoState.msg;/home/niat/humanoid_ws/src/ainex_driver/ros_robot_controller/msg/PWMServoState.msg;/home/niat/humanoid_ws/src/ainex_driver/ros_robot_controller/msg/GetPWMServoCmd.msg;/home/niat/humanoid_ws/src/ainex_driver/ros_robot_controller/msg/SetPWMServoState.msg;/home/niat/humanoid_ws/src/ainex_driver/ros_robot_controller/msg/BusServoPosition.msg;/home/niat/humanoid_ws/src/ainex_driver/ros_robot_controller/msg/SetBusServosPosition.msg"
+services_str = "/home/niat/humanoid_ws/src/ainex_driver/ros_robot_controller/srv/GetBusServoState.srv;/home/niat/humanoid_ws/src/ainex_driver/ros_robot_controller/srv/GetPWMServoState.srv;/home/niat/humanoid_ws/src/ainex_driver/ros_robot_controller/srv/GetBusServosPosition.srv"
+pkg_name = "ros_robot_controller"
+dependencies_str = "std_msgs"
+langs = "gencpp;geneus;genlisp;gennodejs;genpy"
+dep_include_paths_str = "ros_robot_controller;/home/niat/humanoid_ws/src/ainex_driver/ros_robot_controller/msg;std_msgs;/opt/ros/melodic/share/std_msgs/cmake/../msg"
+PYTHON_EXECUTABLE = "/usr/bin/python2"
+package_has_static_sources = 'TRUE' == 'TRUE'
+genmsg_check_deps_script = "/opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py"

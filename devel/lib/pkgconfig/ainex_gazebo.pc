@@ -1,0 +1,8 @@
+prefix=/home/niat/humanoid_ws/devel
+
+Name: ainex_gazebo
+Description: Description of ainex_gazebo
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,7 @@
+set(ainex_line_follower_SETUP_PY_SETUP_MODULE "distutils.core")
+set(ainex_line_follower_SETUP_PY_VERSION "1.0.0")
+set(ainex_line_follower_SETUP_PY_SCRIPTS "")
+set(ainex_line_follower_SETUP_PY_PACKAGES "ainex_line_follower")
+set(ainex_line_follower_SETUP_PY_PACKAGE_DIRS "src/ainex_line_follower")
+set(ainex_line_follower_SETUP_PY_MODULES "")
+set(ainex_line_follower_SETUP_PY_MODULE_DIRS "")

@@ -1,0 +1,14 @@
+<launch>
+    <!-- Improvised Ball Kicking Launch File -->
+    <!-- This version uses aggressive walking to actually kick the ball -->
+    
+    <!-- Load parameters from YAML file -->
+    <rosparam command="load" file="$(find kick_ball)/config/improvised_kicking_params.yaml" ns="improvised_kicking_node"/>
+    
+    <!-- Main kicking node -->
+    <node name="improvised_kicking_node" pkg="kick_ball" type="improvised_kicking.py" output="screen"/>
+    
+    <!-- RQT Image View for visualization -->
+    <node name="image_view" pkg="rqt_image_view" type="rqt_image_view" args="/improvised_kicking/debug_image"/>
+    
+</launch>

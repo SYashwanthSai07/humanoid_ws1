@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- Walking Demo Launch File -->
+    <!-- Prerequisites: -->
+    <!-- 1. roslaunch ainex_gazebo worlds.launch -->
+    <!-- 2. roslaunch ainex_kinematics ainex_controller.launch gazebo_sim:=true -->
+    
+    <node name="walking_demo" pkg="walk_demo" type="walking.py" output="screen" />
+    
+</launch>

@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="red_ball_6cm">
+
+    <!-- Make it dynamic -->
+    <static>false</static>
+
+    <link name="ball_link">
+
+      <!-- Pose -->
+      <pose>0 0 0 0 0 0</pose>
+
+      <!-- Visual -->
+      <visual name="ball_visual">
+        <geometry>
+          <sphere>
+            <radius>0.03</radius>
+          </sphere>
+        </geometry>
+
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Grey</name>
+          </script>
+          <ambient>0.8 0 0 1</ambient>
+          <diffuse>0.8 0 0 1</diffuse>
+        </material>
+      </visual>
+
+      <!-- Collision -->
+      <collision name="ball_collision">
+        <geometry>
+          <sphere>
+            <radius>0.03</radius>
+          </sphere>
+        </geometry>
+      </collision>
+
+      <!-- Inertial -->
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.1</mass>
+        <inertia>
+          <ixx>0.00004</ixx>
+          <ixy>0.0</ixy>
+          <ixz>0.0</ixz>
+          <iyy>0.00004</iyy>
+          <iyz>0.0</iyz>
+          <izz>0.00004</izz>
+        </inertia>
+      </inertial>
+
+    </link>
+  </model>
+</sdf>
+

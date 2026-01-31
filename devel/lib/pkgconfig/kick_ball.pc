@@ -1,0 +1,8 @@
+prefix=/home/niat/humanoid_ws/devel
+
+Name: kick_ball
+Description: Description of kick_ball
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: rospy std_msgs sensor_msgs cv_bridge ainex_kinematics

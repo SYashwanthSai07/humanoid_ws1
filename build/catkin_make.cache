@@ -1,0 +1,2 @@
+ainex_driver/ainex_kinematics:ainex_driver/ainex_sdk:ainex_interfaces:ainex_line_follower:ainex_simulations/ainex_description:ainex_simulations/ainex_gazebo:gazebo_world:kick_ball:line_follower_test:walk_demo
+-DCATKIN_DEVEL_PREFIX=/home/niat/humanoid_ws/devel -DCMAKE_INSTALL_PREFIX=/home/niat/humanoid_ws/install -G Unix Makefiles

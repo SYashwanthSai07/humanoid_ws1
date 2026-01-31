@@ -1,0 +1,5 @@
+ainex_bringup
+/home/niat/humanoid_ws/devel/.private/ainex_bringup/cmake.lock /home/niat/humanoid_ws/devel/./cmake.lock
+/home/niat/humanoid_ws/devel/.private/ainex_bringup/lib/pkgconfig/ainex_bringup.pc /home/niat/humanoid_ws/devel/lib/pkgconfig/ainex_bringup.pc
+/home/niat/humanoid_ws/devel/.private/ainex_bringup/share/ainex_bringup/cmake/ainex_bringupConfig-version.cmake /home/niat/humanoid_ws/devel/share/ainex_bringup/cmake/ainex_bringupConfig-version.cmake
+/home/niat/humanoid_ws/devel/.private/ainex_bringup/share/ainex_bringup/cmake/ainex_bringupConfig.cmake /home/niat/humanoid_ws/devel/share/ainex_bringup/cmake/ainex_bringupConfig.cmake

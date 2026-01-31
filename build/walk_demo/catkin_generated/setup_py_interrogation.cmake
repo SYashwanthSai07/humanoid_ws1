@@ -1,0 +1,7 @@
+set(walk_demo_SETUP_PY_SETUP_MODULE "distutils.core")
+set(walk_demo_SETUP_PY_VERSION "1.0.0")
+set(walk_demo_SETUP_PY_SCRIPTS "")
+set(walk_demo_SETUP_PY_PACKAGES "walk_demo")
+set(walk_demo_SETUP_PY_PACKAGE_DIRS "src/walk_demo")
+set(walk_demo_SETUP_PY_MODULES "")
+set(walk_demo_SETUP_PY_MODULE_DIRS "")

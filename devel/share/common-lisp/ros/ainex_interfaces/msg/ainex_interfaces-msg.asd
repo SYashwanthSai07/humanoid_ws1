@@ -1,0 +1,28 @@
+
+(cl:in-package :asdf)
+
+(defsystem "ainex_interfaces-msg"
+  :depends-on (:roslisp-msg-protocol :roslisp-utils :std_msgs-msg
+)
+  :components ((:file "_package")
+    (:file "ColorDetect" :depends-on ("_package_ColorDetect"))
+    (:file "_package_ColorDetect" :depends-on ("_package"))
+    (:file "ColorsDetect" :depends-on ("_package_ColorsDetect"))
+    (:file "_package_ColorsDetect" :depends-on ("_package"))
+    (:file "FingerPosition" :depends-on ("_package_FingerPosition"))
+    (:file "_package_FingerPosition" :depends-on ("_package"))
+    (:file "LineROI" :depends-on ("_package_LineROI"))
+    (:file "_package_LineROI" :depends-on ("_package"))
+    (:file "ObjectInfo" :depends-on ("_package_ObjectInfo"))
+    (:file "_package_ObjectInfo" :depends-on ("_package"))
+    (:file "ObjectsInfo" :depends-on ("_package_ObjectsInfo"))
+    (:file "_package_ObjectsInfo" :depends-on ("_package"))
+    (:file "PixelPosition" :depends-on ("_package_PixelPosition"))
+    (:file "_package_PixelPosition" :depends-on ("_package"))
+    (:file "RGB" :depends-on ("_package_RGB"))
+    (:file "_package_RGB" :depends-on ("_package"))
+    (:file "ROI" :depends-on ("_package_ROI"))
+    (:file "_package_ROI" :depends-on ("_package"))
+    (:file "WalkingParam" :depends-on ("_package_WalkingParam"))
+    (:file "_package_WalkingParam" :depends-on ("_package"))
+  ))

@@ -1,0 +1,5 @@
+ainex_simulations/ainex_gazebo
+/home/niat/humanoid_ws/devel/.private/ainex_gazebo/cmake.lock /home/niat/humanoid_ws/devel/./cmake.lock
+/home/niat/humanoid_ws/devel/.private/ainex_gazebo/lib/pkgconfig/ainex_gazebo.pc /home/niat/humanoid_ws/devel/lib/pkgconfig/ainex_gazebo.pc
+/home/niat/humanoid_ws/devel/.private/ainex_gazebo/share/ainex_gazebo/cmake/ainex_gazeboConfig.cmake /home/niat/humanoid_ws/devel/share/ainex_gazebo/cmake/ainex_gazeboConfig.cmake
+/home/niat/humanoid_ws/devel/.private/ainex_gazebo/share/ainex_gazebo/cmake/ainex_gazeboConfig-version.cmake /home/niat/humanoid_ws/devel/share/ainex_gazebo/cmake/ainex_gazeboConfig-version.cmake

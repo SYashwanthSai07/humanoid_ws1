@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- Set environment variables for software rendering and Qt -->
+    <env name="LIBGL_ALWAYS_SOFTWARE" value="1"/>
+    <env name="QT_QPA_PLATFORM" value="xcb"/>
+    
+    <!-- Set GAZEBO_MODEL_PATH -->
+    <env name="GAZEBO_MODEL_PATH" value="$(find gazebo_world)/models"/>
+
+    <!-- Launch arguments -->
+    <arg name="paused"          default="true"/>   <!-- Start PAUSED to allow proper loading -->
+    <arg name="use_sim_time"    default="true"/>
+    <arg name="gui"             default="true"/>
+    <arg name="headless"        default="false"/>
+    <arg name="debug"           default="false"/>
+    <arg name="verbose"         default="false"/>  <!-- Reduce verbose output -->
+    
+    <!-- Robot spawn position and orientation (1000x1000 world, center at 0,0) -->
+    <arg name="x"               default="-0.347179"/>  <!-- Moved 30cm forward (negative X with -180° yaw) -->
+    <arg name="y"               default="4.144709"/>
+    <arg name="z"               default="0.24"/>  <!-- Height matching Reference (0.24-0.25) -->
+    <arg name="roll"            default="0.002186"/>
+    <arg name="pitch"           default="0.254504"/>
+    <arg name="yaw"             default="1.57"/>  <!-- -180 degrees (turned 90° right from -90°) -->
+
+    <!-- Set use_sim_time parameter -->
+    <param name="/use_sim_time" value="$(arg use_sim_time)"/>
+
+    <!-- Launch Gazebo with line_follower world -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name"      value="$(find gazebo_world)/worlds/assignment1.world"/>
+        <arg name="paused"          value="$(arg paused)"/>
+        <arg name="use_sim_time"    value="$(arg use_sim_time)"/>
+        <arg name="gui"             value="$(arg gui)"/>
+        <arg name="headless"        value="$(arg headless)"/>
+        <arg name="debug"           value="$(arg debug)"/>
+        <arg name="verbose"         value="$(arg verbose)"/>
+    </include>
+
+    <!-- Load robot description -->
+    <param name="robot_description" command="$(find xacro)/xacro '$(find ainex_description)/urdf/ainex.xacro'" />
+
+    <!-- Spawn robot model in Gazebo -->
+    <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" 
+          args="-urdf -param robot_description -model ainex
+                -x $(arg x) -y $(arg y) -z $(arg z) 
+                -R $(arg roll) -P $(arg pitch) -Y $(arg yaw)
+                -J l_sho_roll -1.403 -J l_el_yaw -1.226 
+                -J r_sho_roll 1.403 -J r_el_yaw 1.226" 
+          respawn="false" output="screen" />
+
+    <!-- Load position controller -->
+    <include file="$(find ainex_gazebo)/launch/position_controller.launch"/>
+    
+    <!-- Load ainex kinematics controller for robot control -->
+    <include file="$(find ainex_kinematics)/launch/ainex_controller.launch">
+        <arg name="gazebo_sim" value="true"/>
+    </include>
+
+    <!-- Delayed start script - unpauses Gazebo after robot is loaded -->
+    <node name="delayed_start" pkg="ainex_line_follower" type="delayed_start.sh" output="screen" />
+
+    <!-- Line follower node V2 with improved walking logic and launch-prefix to add delay -->
+    <node name="line_follower" pkg="ainex_line_follower" type="line_follower_node_v2.py" output="screen"
+          launch-prefix="bash -c 'sleep 5; $0 $@' ">
+        <param name="image_topic" value="/camera/image_raw"/>
+        <param name="control_rate" value="10"/>
+        <rosparam file="$(find ainex_line_follower)/config/line_follower_params.yaml" command="load"/>
+    </node>
+
+    <!-- Image viewer for debug visualization -->
+    <node name="image_view" pkg="rqt_image_view" type="rqt_image_view" 
+          args="/line_follower_node/debug_image"
+          launch-prefix="bash -c 'sleep 8; $0 $@' "
+          output="screen" />
+
+</launch>

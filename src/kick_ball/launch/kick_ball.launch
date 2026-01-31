@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- Red Ball Kicking Demo Launch File -->
+    <!-- Prerequisites: -->
+    <!-- 1. roslaunch ainex_gazebo worlds.launch (with red ball in world) -->
+    <!-- 2. roslaunch ainex_kinematics ainex_controller.launch gazebo_sim:=true -->
+    
+    <!-- Kick ball node -->
+    <node name="kick_ball_node" pkg="kick_ball" type="kick_ball_node.py" output="screen">
+        <param name="image_topic" value="/camera/image_raw"/>
+        <rosparam file="$(find kick_ball)/config/kick_ball_params.yaml" command="load"/>
+    </node>
+    
+    <!-- Image viewer for debug visualization -->
+    <node name="image_view" pkg="rqt_image_view" type="rqt_image_view" 
+          args="/kick_ball/debug_image"
+          launch-prefix="bash -c 'sleep 2; $0 $@' "
+          output="screen" />
+    
+</launch>

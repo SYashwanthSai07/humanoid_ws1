@@ -1,0 +1,6 @@
+ainex_driver/ainex_kinematics
+/home/niat/humanoid_ws/devel/.private/ainex_kinematics/cmake.lock /home/niat/humanoid_ws/devel/./cmake.lock
+/home/niat/humanoid_ws/devel/.private/ainex_kinematics/lib/pkgconfig/ainex_kinematics.pc /home/niat/humanoid_ws/devel/lib/pkgconfig/ainex_kinematics.pc
+/home/niat/humanoid_ws/devel/.private/ainex_kinematics/lib/python2.7/dist-packages/ainex_kinematics/__init__.py /home/niat/humanoid_ws/devel/lib/python2.7/dist-packages/ainex_kinematics/__init__.py
+/home/niat/humanoid_ws/devel/.private/ainex_kinematics/share/ainex_kinematics/cmake/ainex_kinematicsConfig.cmake /home/niat/humanoid_ws/devel/share/ainex_kinematics/cmake/ainex_kinematicsConfig.cmake
+/home/niat/humanoid_ws/devel/.private/ainex_kinematics/share/ainex_kinematics/cmake/ainex_kinematicsConfig-version.cmake /home/niat/humanoid_ws/devel/share/ainex_kinematics/cmake/ainex_kinematicsConfig-version.cmake

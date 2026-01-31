@@ -1,0 +1,8 @@
+prefix=/home/niat/humanoid_ws/install
+
+Name: gazebo_world
+Description: Description of gazebo_world
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

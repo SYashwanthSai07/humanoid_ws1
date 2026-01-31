@@ -1,0 +1,5 @@
+ainex_tutorial
+/home/niat/humanoid_ws/devel/.private/ainex_tutorial/cmake.lock /home/niat/humanoid_ws/devel/./cmake.lock
+/home/niat/humanoid_ws/devel/.private/ainex_tutorial/lib/pkgconfig/ainex_tutorial.pc /home/niat/humanoid_ws/devel/lib/pkgconfig/ainex_tutorial.pc
+/home/niat/humanoid_ws/devel/.private/ainex_tutorial/share/ainex_tutorial/cmake/ainex_tutorialConfig.cmake /home/niat/humanoid_ws/devel/share/ainex_tutorial/cmake/ainex_tutorialConfig.cmake
+/home/niat/humanoid_ws/devel/.private/ainex_tutorial/share/ainex_tutorial/cmake/ainex_tutorialConfig-version.cmake /home/niat/humanoid_ws/devel/share/ainex_tutorial/cmake/ainex_tutorialConfig-version.cmake

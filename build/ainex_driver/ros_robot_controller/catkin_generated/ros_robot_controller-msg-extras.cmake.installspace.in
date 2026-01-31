@@ -1,0 +1,2 @@
+set(ros_robot_controller_MESSAGE_FILES "msg/Sbus.msg;msg/ButtonState.msg;msg/LedState.msg;msg/RGBState.msg;msg/RGBsState.msg;msg/BuzzerState.msg;msg/MotorState.msg;msg/OLEDState.msg;msg/MotorsState.msg;msg/BusServoState.msg;msg/GetBusServoCmd.msg;msg/SetBusServoState.msg;msg/PWMServoState.msg;msg/GetPWMServoCmd.msg;msg/SetPWMServoState.msg;msg/BusServoPosition.msg;msg/SetBusServosPosition.msg")
+set(ros_robot_controller_SERVICE_FILES "srv/GetBusServoState.srv;srv/GetPWMServoState.srv;srv/GetBusServosPosition.srv")

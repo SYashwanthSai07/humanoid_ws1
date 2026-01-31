@@ -1,0 +1,6 @@
+ainex_driver/ainex_sdk
+/home/niat/humanoid_ws/devel/.private/ainex_sdk/cmake.lock /home/niat/humanoid_ws/devel/./cmake.lock
+/home/niat/humanoid_ws/devel/.private/ainex_sdk/lib/pkgconfig/ainex_sdk.pc /home/niat/humanoid_ws/devel/lib/pkgconfig/ainex_sdk.pc
+/home/niat/humanoid_ws/devel/.private/ainex_sdk/lib/python2.7/dist-packages/ainex_sdk/__init__.py /home/niat/humanoid_ws/devel/lib/python2.7/dist-packages/ainex_sdk/__init__.py
+/home/niat/humanoid_ws/devel/.private/ainex_sdk/share/ainex_sdk/cmake/ainex_sdkConfig-version.cmake /home/niat/humanoid_ws/devel/share/ainex_sdk/cmake/ainex_sdkConfig-version.cmake
+/home/niat/humanoid_ws/devel/.private/ainex_sdk/share/ainex_sdk/cmake/ainex_sdkConfig.cmake /home/niat/humanoid_ws/devel/share/ainex_sdk/cmake/ainex_sdkConfig.cmake

@@ -1,0 +1,32 @@
+# Kick Ball Parameters for Gazebo Simulation
+
+# Image processing parameters
+image_process_size: [160, 120]  # Width x Height for processing
+
+# Red ball detection (HSV color space)
+# Red wraps around in HSV, so we need two ranges
+lower_red1: [0, 100, 100]       # Lower red range (H, S, V)
+upper_red1: [10, 255, 255]
+lower_red2: [160, 100, 100]     # Upper red range (H, S, V)
+upper_red2: [180, 255, 255]
+
+min_ball_area: 50               # Minimum contour area to consider as ball
+max_ball_area: 19200            # Maximum area (full image = 160*120)
+
+# ROI for ball detection (search area)
+# [y_min, y_max, x_min, x_max] in normalized coordinates (0.0 to 1.0)
+ball_roi: [0.2, 0.9, 0.1, 0.9]  # Search in lower 70% of image
+
+# Walking parameters (from line_follower optimized values)
+approach_speed: 0.012           # Forward speed when approaching ball (meters)
+turn_speed: 0.008               # Forward speed when turning toward ball
+max_turn_angle: 10              # Maximum turn angle (degrees)
+approach_threshold: 10          # Ball radius when close enough to kick (pixels) - observed max ~11px
+
+# Head tracking
+head_pan_init: 500              # Center position for pan servo (left/right)
+head_tilt_init: 350             # Initial downward angle for tilt servo (up/down)
+
+# Kicking parameters
+kick_forward_speed: 0.02        # Fast forward motion to kick ball
+kick_duration: 0.5              # Duration of kick motion (seconds)

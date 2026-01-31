@@ -1,0 +1,5 @@
+ainex_peripherals
+/home/niat/humanoid_ws/devel/.private/ainex_peripherals/cmake.lock /home/niat/humanoid_ws/devel/./cmake.lock
+/home/niat/humanoid_ws/devel/.private/ainex_peripherals/lib/pkgconfig/ainex_peripherals.pc /home/niat/humanoid_ws/devel/lib/pkgconfig/ainex_peripherals.pc
+/home/niat/humanoid_ws/devel/.private/ainex_peripherals/share/ainex_peripherals/cmake/ainex_peripheralsConfig.cmake /home/niat/humanoid_ws/devel/share/ainex_peripherals/cmake/ainex_peripheralsConfig.cmake
+/home/niat/humanoid_ws/devel/.private/ainex_peripherals/share/ainex_peripherals/cmake/ainex_peripheralsConfig-version.cmake /home/niat/humanoid_ws/devel/share/ainex_peripherals/cmake/ainex_peripheralsConfig-version.cmake

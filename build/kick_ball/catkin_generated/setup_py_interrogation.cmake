@@ -1,0 +1,7 @@
+set(kick_ball_SETUP_PY_SETUP_MODULE "distutils.core")
+set(kick_ball_SETUP_PY_VERSION "1.0.0")
+set(kick_ball_SETUP_PY_SCRIPTS "")
+set(kick_ball_SETUP_PY_PACKAGES "kick_ball")
+set(kick_ball_SETUP_PY_PACKAGE_DIRS "src/kick_ball")
+set(kick_ball_SETUP_PY_MODULES "")
+set(kick_ball_SETUP_PY_MODULE_DIRS "")

@@ -1,0 +1,7 @@
+set(ainex_sdk_SETUP_PY_SETUP_MODULE "distutils.core")
+set(ainex_sdk_SETUP_PY_VERSION "0.0.0")
+set(ainex_sdk_SETUP_PY_SCRIPTS "")
+set(ainex_sdk_SETUP_PY_PACKAGES "ainex_sdk")
+set(ainex_sdk_SETUP_PY_PACKAGE_DIRS "src/ainex_sdk")
+set(ainex_sdk_SETUP_PY_MODULES "")
+set(ainex_sdk_SETUP_PY_MODULE_DIRS "")

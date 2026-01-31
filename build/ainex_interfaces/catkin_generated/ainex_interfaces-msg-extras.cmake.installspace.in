@@ -1,0 +1,2 @@
+set(ainex_interfaces_MESSAGE_FILES "msg/RGB.msg;msg/ROI.msg;msg/LineROI.msg;msg/WalkingParam.msg;msg/ObjectInfo.msg;msg/ObjectsInfo.msg;msg/ColorDetect.msg;msg/ColorsDetect.msg;msg/FingerPosition.msg;msg/PixelPosition.msg")
+set(ainex_interfaces_SERVICE_FILES "srv/SetRGB.srv;srv/SetString.srv;srv/SetFloat.srv;srv/SetPoint.srv;srv/SetWalkingParam.srv;srv/GetWalkingParam.srv;srv/SetWalkingCommand.srv;srv/GetWalkingState.srv")

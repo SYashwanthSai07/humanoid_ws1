@@ -1,0 +1,7 @@
+set(line_follower_test_SETUP_PY_SETUP_MODULE "distutils.core")
+set(line_follower_test_SETUP_PY_VERSION "1.0.0")
+set(line_follower_test_SETUP_PY_SCRIPTS "")
+set(line_follower_test_SETUP_PY_PACKAGES "line_follower_test")
+set(line_follower_test_SETUP_PY_PACKAGE_DIRS "src/line_follower_test")
+set(line_follower_test_SETUP_PY_MODULES "")
+set(line_follower_test_SETUP_PY_MODULE_DIRS "")

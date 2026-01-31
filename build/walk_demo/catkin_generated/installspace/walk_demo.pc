@@ -1,0 +1,8 @@
+prefix=/home/niat/humanoid_ws/install
+
+Name: walk_demo
+Description: Description of walk_demo
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: rospy std_msgs ainex_kinematics

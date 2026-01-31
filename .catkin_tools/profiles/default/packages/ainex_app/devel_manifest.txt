@@ -1,0 +1,6 @@
+ainex_app
+/home/niat/humanoid_ws/devel/.private/ainex_app/cmake.lock /home/niat/humanoid_ws/devel/./cmake.lock
+/home/niat/humanoid_ws/devel/.private/ainex_app/lib/pkgconfig/ainex_app.pc /home/niat/humanoid_ws/devel/lib/pkgconfig/ainex_app.pc
+/home/niat/humanoid_ws/devel/.private/ainex_app/lib/python2.7/dist-packages/ainex_app/__init__.py /home/niat/humanoid_ws/devel/lib/python2.7/dist-packages/ainex_app/__init__.py
+/home/niat/humanoid_ws/devel/.private/ainex_app/share/ainex_app/cmake/ainex_appConfig-version.cmake /home/niat/humanoid_ws/devel/share/ainex_app/cmake/ainex_appConfig-version.cmake
+/home/niat/humanoid_ws/devel/.private/ainex_app/share/ainex_app/cmake/ainex_appConfig.cmake /home/niat/humanoid_ws/devel/share/ainex_app/cmake/ainex_appConfig.cmake

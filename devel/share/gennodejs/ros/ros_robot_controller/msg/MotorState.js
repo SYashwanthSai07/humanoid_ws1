@@ -1,0 +1,126 @@
+// Auto-generated. Do not edit!
+
+// (in-package ros_robot_controller.msg)
+
+
+"use strict";
+
+const _serializer = _ros_msg_utils.Serialize;
+const _arraySerializer = _serializer.Array;
+const _deserializer = _ros_msg_utils.Deserialize;
+const _arrayDeserializer = _deserializer.Array;
+const _finder = _ros_msg_utils.Find;
+const _getByteLength = _ros_msg_utils.getByteLength;
+
+//-----------------------------------------------------------
+
+class MotorState {
+  constructor(initObj={}) {
+    if (initObj === null) {
+      // initObj === null is a special case for deserialization where we don't initialize fields
+      this.id = null;
+      this.rps = null;
+      this.duty = null;
+    }
+    else {
+      if (initObj.hasOwnProperty('id')) {
+        this.id = initObj.id
+      }
+      else {
+        this.id = 0;
+      }
+      if (initObj.hasOwnProperty('rps')) {
+        this.rps = initObj.rps
+      }
+      else {
+        this.rps = 0.0;
+      }
+      if (initObj.hasOwnProperty('duty')) {
+        this.duty = initObj.duty
+      }
+      else {
+        this.duty = 0;
+      }
+    }
+  }
+
+  static serialize(obj, buffer, bufferOffset) {
+    // Serializes a message object of type MotorState
+    // Serialize message field [id]
+    bufferOffset = _serializer.uint16(obj.id, buffer, bufferOffset);
+    // Serialize message field [rps]
+    bufferOffset = _serializer.float64(obj.rps, buffer, bufferOffset);
+    // Serialize message field [duty]
+    bufferOffset = _serializer.int8(obj.duty, buffer, bufferOffset);
+    return bufferOffset;
+  }
+
+  static deserialize(buffer, bufferOffset=[0]) {
+    //deserializes a message object of type MotorState
+    let len;
+    let data = new MotorState(null);
+    // Deserialize message field [id]
+    data.id = _deserializer.uint16(buffer, bufferOffset);
+    // Deserialize message field [rps]
+    data.rps = _deserializer.float64(buffer, bufferOffset);
+    // Deserialize message field [duty]
+    data.duty = _deserializer.int8(buffer, bufferOffset);
+    return data;
+  }
+
+  static getMessageSize(object) {
+    return 11;
+  }
+
+  static datatype() {
+    // Returns string type for a message object
+    return 'ros_robot_controller/MotorState';
+  }
+
+  static md5sum() {
+    //Returns md5sum for a message object
+    return 'd79026762feb15b0fd2b852459fe5888';
+  }
+
+  static messageDefinition() {
+    // Returns full string definition for message
+    return `
+    uint16 id
+    float64 rps
+    int8 duty
+    
+    `;
+  }
+
+  static Resolve(msg) {
+    // deep-construct a valid message object instance of whatever was passed in
+    if (typeof msg !== 'object' || msg === null) {
+      msg = {};
+    }
+    const resolved = new MotorState(null);
+    if (msg.id !== undefined) {
+      resolved.id = msg.id;
+    }
+    else {
+      resolved.id = 0
+    }
+
+    if (msg.rps !== undefined) {
+      resolved.rps = msg.rps;
+    }
+    else {
+      resolved.rps = 0.0
+    }
+
+    if (msg.duty !== undefined) {
+      resolved.duty = msg.duty;
+    }
+    else {
+      resolved.duty = 0
+    }
+
+    return resolved;
+    }
+};
+
+module.exports = MotorState;

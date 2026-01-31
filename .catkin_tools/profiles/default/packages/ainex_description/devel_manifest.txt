@@ -1,0 +1,5 @@
+ainex_simulations/ainex_description
+/home/niat/humanoid_ws/devel/.private/ainex_description/cmake.lock /home/niat/humanoid_ws/devel/./cmake.lock
+/home/niat/humanoid_ws/devel/.private/ainex_description/lib/pkgconfig/ainex_description.pc /home/niat/humanoid_ws/devel/lib/pkgconfig/ainex_description.pc
+/home/niat/humanoid_ws/devel/.private/ainex_description/share/ainex_description/cmake/ainex_descriptionConfig-version.cmake /home/niat/humanoid_ws/devel/share/ainex_description/cmake/ainex_descriptionConfig-version.cmake
+/home/niat/humanoid_ws/devel/.private/ainex_description/share/ainex_description/cmake/ainex_descriptionConfig.cmake /home/niat/humanoid_ws/devel/share/ainex_description/cmake/ainex_descriptionConfig.cmake

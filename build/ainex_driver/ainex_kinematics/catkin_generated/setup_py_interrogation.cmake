@@ -1,0 +1,7 @@
+set(ainex_kinematics_SETUP_PY_SETUP_MODULE "distutils.core")
+set(ainex_kinematics_SETUP_PY_VERSION "0.0.0")
+set(ainex_kinematics_SETUP_PY_SCRIPTS "")
+set(ainex_kinematics_SETUP_PY_PACKAGES "ainex_kinematics")
+set(ainex_kinematics_SETUP_PY_PACKAGE_DIRS "src/ainex_kinematics")
+set(ainex_kinematics_SETUP_PY_MODULES "")
+set(ainex_kinematics_SETUP_PY_MODULE_DIRS "")

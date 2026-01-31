@@ -1,0 +1,8 @@
+prefix=/home/niat/humanoid_ws/devel
+
+Name: line_follower_test
+Description: Description of line_follower_test
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: rospy std_msgs sensor_msgs geometry_msgs cv_bridge image_transport

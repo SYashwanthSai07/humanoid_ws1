@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>walk_demo</name>
+  <version>1.0.0</version>
+  <description>Walking demonstration package for Ainex humanoid robot in Gazebo</description>
+  
+  <maintainer email="user@todo.todo">Niat</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  
+  <depend>rospy</depend>
+  <depend>std_msgs</depend>
+  <depend>ainex_kinematics</depend>
+
+  <export>
+  </export>
+</package>

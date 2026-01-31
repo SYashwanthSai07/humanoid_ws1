@@ -1,0 +1,8 @@
+prefix=/home/niat/humanoid_ws/devel
+
+Name: ainex_interfaces
+Description: Description of ainex_interfaces
+Version: 0.0.0
+Cflags: -I/home/niat/humanoid_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: message_generation message_runtime std_msgs
